@@ -9,8 +9,9 @@ function Tweet(props) {
 
   // si escribiese {tweet} en lugar de props estaría destructurando y declarando "tweet" como variable, y me ahorraría tener que escribir props en ninguna parte.
 
-  const {image, name, handle} = props.tweet.user;
-  const {timestamp, message} = props.tweet
+  // const {image, name, handle} = props.tweet.user; 
+  // const {timestamp, message} = props.tweet
+  const {tweet: {user: image, name, handle}, timestamp, message} = props
 
   return (
     <div className="tweet">
