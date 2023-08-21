@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
-import Tweet from "../components/Tweet";
+import Tweet from "../components/Tweet/Tweet";
 
 describe("Tweet component", () => {
   const tweet = {
