@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import "./App.css";
 import Tweet from "./components/Tweet";
 
@@ -38,11 +39,22 @@ const tweetsArray = [
 ];
 
 function App() {
-  return (
-    <div className="App">
-      <Tweet />
-    </div>
-  );
+  return(
+  <div className="App">
+    {tweetsArray.map((tweets) => {
+      return (
+        <div>
+          <Tweet tweet={tweets}/>
+        </div>
+      )
+    })}
+  </div>
+  )
 }
+  
+  
+
 
 export default App;
+
+
