@@ -1,17 +1,20 @@
-function Tweet() {
+import ProfileImage from './ProfileImage'
+import User from './User'
+
+function Tweet({ tweet }) {
+
+  const { user, timestamp, message } = tweet
+  const { name, image, handle } = user
+
   return (
     <div className="tweet">
-      <img
-        src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/ih_logo.jpeg"
-        className="profile"
-        alt="profile"
-      />
+      <ProfileImage image={user.image} />
 
       <div className="body">
         <div className="top">
           <span className="user">
-            <span className="name">Ironhack</span>
-            <span className="handle">@ironhack</span>
+
+            <User name={user.name} handle={user.handle} />
           </span>
 
           <span className="timestamp">Nov 30, 2020</span>
