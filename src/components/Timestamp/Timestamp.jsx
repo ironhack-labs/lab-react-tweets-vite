@@ -1,5 +1,6 @@
-const Timestamp = ({timestamp}) => {
-    return( <span className="timestamp">{timestamp}</span>)
+const Timestamp = ({ time }) => {
+    console.log(time)
+    return( <span className="timestamp">{time}</span>)
 }
 
 export default Timestamp
