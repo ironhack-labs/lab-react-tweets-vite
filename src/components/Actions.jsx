@@ -1,4 +1,3 @@
-import React from "react"; 
 function Actions (){ 
     return (
     <div className="actions">
