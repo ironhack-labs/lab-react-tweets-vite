@@ -103,12 +103,7 @@ During an iteration, if your code seems to work as expected but some tests don't
 1. We will use [Font Awesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1) for the icons. Add the following stylesheet in the `head` of the `index.html` page:
 
    ```html
-   <link
-     rel="stylesheet"
-     href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-     crossorigin="anonymous"
-   />
+   
    ```
 
 <br>

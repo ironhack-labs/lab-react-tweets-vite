@@ -40,7 +40,9 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      <Tweet details={tweetsArray[0]}/>
+      <Tweet details={tweetsArray[1]}/>
+      <Tweet details={tweetsArray[2]}/>
     </div>
   );
 }
