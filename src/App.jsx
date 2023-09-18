@@ -1,6 +1,7 @@
 import "./App.css";
 import Tweet from "./components/Tweet";
 
+
 const tweetsArray = [
   {
     user: {
@@ -40,7 +41,29 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      
+      {/* {tweetsArray.map(({ user, timestamp, message}, index) => {
+        return (
+          <Tweet
+          key={`${index} + ${user.name}`}
+          name={user.name}
+          image ={user.image}
+          handle={user.handle}
+          timestamp={timestamp}
+          message={message}
+          /> */}
+
+          {tweetsArray.map((tweet, index) => {
+            return (
+              <Tweet
+                key={index}
+                user={tweet.user}
+                timestamp={tweet.timestamp}
+                message={tweet.message}
+              />
+        );
+      })
+    }
     </div>
   );
 }
