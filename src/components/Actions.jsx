@@ -1,13 +1,12 @@
 
 
-export default function Action() {
+export default function Actions() {
   return (
     <><div className="actions">
     <i className="far fa-comment" data-testid="comment-icon"></i>
     <i className="fas fa-retweet" data-testid="retweet-icon"></i>
     <i className="far fa-heart" data-testid="heart-icon"></i>
     <i className="fas fa-share" data-testid="share-icon"></i>
-    <i className="fas fa-ellipsis-h"></i>
   </div></>
   )
 }
