@@ -1,8 +1,15 @@
 import "./App.css";
 import Tweet from "./components/Tweet";
 
+//here you are importing the file app.css where u are editing everything
+//you are importing the tweets from components, this have all the info to do the web dinamic(change the info depending on which object of the array are u choosing)
+
+{
+}
+
 const tweetsArray = [
   {
+    //array of objects with the info you will need for later fill the empty boxes on the twitter jsx
     user: {
       name: "Thoughts of Dog®",
       image:
@@ -37,12 +44,15 @@ const tweetsArray = [
   },
 ];
 
+//here you are creating a function that is gonna iterate over the array of objects called tweets and select one
+
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      <Tweet tweet={tweetsArray[0]}></Tweet>
     </div>
   );
 }
+//after this, you are exporting this page as app, is gonna be printed on your main jsx file which is then connecte to the browser
 
 export default App;
