@@ -1,5 +1,5 @@
-const Timestamp = ({ timestamp }) => {
-  return <span className="timestamp">{timestamp}</span>;
+const Timestamp = ({ time }) => {
+  return <span className="timestamp">{time}</span>;
 };
 
 export default Timestamp;
