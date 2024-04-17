@@ -7,7 +7,7 @@ describe("Tweet component", () => {
     user: {
       name: "Thoughts of Dog®",
       image: "https://i.imgur.com/b0EdHVV.jpg",
-      handle: "dog_feelings",
+      handle: "@dog_feelings",
     },
     timestamp: "1h ago",
     message: "the human likes to say. that i live here rent free.",
