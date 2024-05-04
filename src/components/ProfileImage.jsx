@@ -1,7 +1,7 @@
-function ProfileImage(props) {
+function ProfileImage(image) {
     return (
         <img
-          src={props.image}
+          src={image}
           className="profile"
           alt="profile"
         />
