@@ -1,5 +1,5 @@
-function Actions() {
-    return(
+export default function Actions() {
+    return (
         <div className="actions">
         {/* Font Awesome icons */}
         <i className="far fa-comment" data-testid="comment-icon"></i>
@@ -7,7 +7,5 @@ function Actions() {
         <i className="far fa-heart" data-testid="heart-icon"></i>
         <i className="fas fa-share" data-testid="share-icon"></i>
         </div>
-    )
+    );
 }
-
-export default Actions;

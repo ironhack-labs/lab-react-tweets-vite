@@ -1,7 +1,5 @@
-function Timestamp({time}) {
-    return (
-        <span className="timestamp">{time}</span>
-    );
+function Timestamp({ timestamp }) {
+    return <span className="timestamp">{timestamp}</span>;
 }
 
 export default Timestamp;
