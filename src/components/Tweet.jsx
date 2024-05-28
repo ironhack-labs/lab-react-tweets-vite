@@ -1,4 +1,4 @@
-import Actions from "./Actions";
+import Actions from "./Actions"
 import Message from "./Message";
 import ProfileImage from "./ProfileImage";
 import Timestamp from "./Timestamp";
