@@ -4,8 +4,8 @@ import ProfileImage from "./ProfileImage";
 import Timestamp from "./Timestamp";
 import User from "./User";
 
-function Tweet(props) {
-  const { user, timestamp, message } = props.tweet;
+function Tweet({tweet}) {
+  const { user, timestamp, message } = tweet;
   return (
     <div className="tweet">
       <ProfileImage image={user.image} />
@@ -19,7 +19,7 @@ function Tweet(props) {
 
         <Message message={message} />
 
-        <Actions/>
+        <Actions />
       </div>
 
       <i className="fas fa-ellipsis-h"></i>
