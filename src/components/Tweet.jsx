@@ -21,8 +21,6 @@ function Tweet({tweet}) {
 
         <Actions />
       </div>
-
-      <i className="fas fa-ellipsis-h"></i>
     </div>
   );
 }
