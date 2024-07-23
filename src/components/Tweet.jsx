@@ -13,7 +13,7 @@ function Tweet({ tweet }) {
           <User name={tweet.user.name} handle={tweet.user.handle} />
           <Timestamp time={tweet.timestamp} />
         </div>
-        <Message text={tweet.message} />
+        <Message message={tweet.message} />
         <Actions />
       </div>
       <i className="fas fa-ellipsis-h"></i>
