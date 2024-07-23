@@ -37,12 +37,13 @@ const tweetsArray = [
   },
 ];
 
+const tweets = tweetsArray.map((tweet, idx) => <Tweet key={idx} tweet={tweet} />)
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      {tweets}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
