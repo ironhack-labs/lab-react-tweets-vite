@@ -1,4 +1,3 @@
-
 function User({name, handle}) {
   return (
     <span className="user">
