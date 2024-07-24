@@ -1,5 +1,6 @@
 import "./App.css";
 import Tweet from "./components/Tweet";
+import React from "react";
 
 const tweetsArray = [
   {
@@ -40,7 +41,11 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      {/* <Tweet image={tweetsArray[0].user.image} tweet={tweetsArray[0]} /> */}
+
+      {tweetsArray.map((eachTweet, i) => {
+        return <Tweet tweet={eachTweet} key={i + eachTweet.user.name} />;
+      })}
     </div>
   );
 }
