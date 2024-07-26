@@ -4,18 +4,16 @@ import Tweet from "../components/Tweet";
 
 describe("Tweet component", () => {
   const tweet = {
-    user: {
+    image: "https://i.imgur.com/b0EdHVV.jpg",
       name: "Thoughts of Dog®",
-      image: "https://i.imgur.com/b0EdHVV.jpg",
       handle: "dog_feelings",
-    },
     timestamp: "1h ago",
     message: "the human likes to say. that i live here rent free.",
   };
 
   test("renders the user name correctly", () => {
     render(<Tweet tweet={tweet} />);
-    const name = screen.getByText(tweet.user.name);
+    const name = screen.getByText(tweet.name);
 
     expect(name).toBeInTheDocument();
   });
@@ -25,12 +23,12 @@ describe("Tweet component", () => {
     const profileImg = screen.getByRole("img");
 
     expect(profileImg).toBeInTheDocument();
-    expect(profileImg).toHaveAttribute("src", tweet.user.image);
+    expect(profileImg).toHaveAttribute("src", tweet.image);
   });
 
   test("renders the user handle correctly", () => {
     render(<Tweet tweet={tweet} />);
-    const handle = screen.getByText(`@${tweet.user.handle}`);
+    const handle = screen.getByText(`@${tweet.handle}`);
 
     expect(handle).toBeInTheDocument();
   });
