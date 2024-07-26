@@ -4,9 +4,9 @@ import User from "../components/User";
 
 describe("User component", () => {
   const tweet = {
+    image: "https://i.imgur.com/b0EdHVV.jpg",
     user: {
       name: "Thoughts of Dog®",
-      image: "https://i.imgur.com/b0EdHVV.jpg",
       handle: "dog_feelings",
     },
     timestamp: "1h ago",

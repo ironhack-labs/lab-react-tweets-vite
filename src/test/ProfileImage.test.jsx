@@ -4,9 +4,9 @@ import ProfileImage from "../components/ProfileImage";
 
 describe("ProfileImage component", () => {
   const tweet = {
+    image: "https://i.imgur.com/b0EdHVV.jpg",
     user: {
       name: "Thoughts of Dog®",
-      image: "https://i.imgur.com/b0EdHVV.jpg",
       handle: "dog_feelings",
     },
     timestamp: "1h ago",
@@ -14,10 +14,10 @@ describe("ProfileImage component", () => {
   };
 
   test("renders image correctly", () => {
-    render(<ProfileImage image={tweet.user.image} />);
+    render(<ProfileImage image={tweet.image} />);
     const img = screen.getByRole("img");
 
     expect(img).toBeInTheDocument();
-    expect(img).toHaveAttribute("src", tweet.user.image);
+    expect(img).toHaveAttribute("src", tweet.image);
   });
 });
