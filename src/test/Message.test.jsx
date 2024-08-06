@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
-import Message from "../components/Message";
+import Message from "../Components/Message";
 
 describe("Message component", () => {
   // const tweet = {

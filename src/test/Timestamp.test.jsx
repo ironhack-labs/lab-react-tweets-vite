@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
-import Timestamp from "../components/Timestamp";
+import Timestamp from "../Components/Timestamp";
 
 describe("Timestamp component", () => {
   // const tweet = {
