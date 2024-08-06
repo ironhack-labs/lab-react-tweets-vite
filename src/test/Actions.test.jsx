@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
-import Actions from "../components/Actions";
+import Actions from "../Components/Actions";
 
 describe("Actions component", () => {
   test("renders all action icons", () => {
