@@ -7,7 +7,6 @@
    <h2>Learning Goals</h2>
   </summary>
 
-
 This exercise allows you to practice and apply the concepts and techniques taught in class.
 
 Upon completion of this exercise, you will be able to:
@@ -40,7 +39,6 @@ We will be cloning an existing piece of UI from a popular app, Twitter. Let's ge
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-tweets-4.png" width="500">
 </p>
 
-
 ## Setup
 
 - Fork this repo
@@ -69,10 +67,9 @@ We will be cloning an existing piece of UI from a popular app, Twitter. Let's ge
 
 <br>
 
-##  Test Your Code
+## Test Your Code
 
 This lab is equipped with unit tests to provide automated feedback on your progress and help you understand whether your code is working as expected. If you want to check the tests, they are located in the `src/test` folder.
-
 
 ### Iterations and Test Results
 
@@ -88,15 +85,13 @@ During an iteration, if your code seems to work as expected but some tests don't
    npm run test
    ```
 
-2. The above command will execute the tests and open the `@vitest/ui` Test Reporter in the browser. 
+2. The above command will execute the tests and open the `@vitest/ui` Test Reporter in the browser.
 
 3. To see the test results, **open** [http://127.0.0.1:51204/\_\_vitest\_\_](http://127.0.0.1:51204/__vitest__) in your browser.
 
 <br>
 
-
 ## Instructions
-
 
 ### Iteration 0 | Font Awesome
 
@@ -125,10 +120,9 @@ Once you initially run the app you should see the following:
 
 <details>
 
-
   <summary><b>See Expected Result</b></summary>
 
-  ![Tweet component after the initial setup](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-tweets-1.png)
+![Tweet component after the initial setup](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-tweets-1.png)
 
   <br>
 
@@ -137,7 +131,6 @@ Once you initially run the app you should see the following:
 <br>
 
 ### Iteration 2 | Pass the Tweet as a Prop
-
 
 The `Tweet` component is at the moment rendering static content, but we will modify it to show the content dynamically. In this iteration, we'll modify the `Tweet` component to display the content coming from the `props`.
 
@@ -167,18 +160,15 @@ Pass the first object from the `tweetsArray` as a `tweet` prop to the component:
 
 Update the `Tweet` component to display the values coming from the `tweet` prop. Remember that the value we passed is an object, so you may want to check the object's structure.
 
-
 Once done, your `Tweet` component should display the following content:
 
 <br>
 
 <details>
 
-
-
   <summary><b>See Expected Result</b></summary>
 
-  ![Tweet component after passing the "tweets" prop](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-tweets-2.png)
+![Tweet component after passing the "tweets" prop](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-tweets-2.png)
 
   <br>
 
@@ -204,12 +194,9 @@ In the following iterations, you will work on refactoring the `Tweet` component.
 
 <details>
 
-
-
   <summary><b>See Expected Result</b></summary>
 
-
-  ![Example - Refactoring the "Tweet" component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-tweets-3.png)<br>
+![Example - Refactoring the "Tweet" component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-react-tweets-3.png)<br>
 
   <br>
 
@@ -278,8 +265,8 @@ Once done, import the `ProfileImage` component to `Tweet.jsx`. After importing i
 ```jsx
 // ...
 
-  <ProfileImage image={IMAGE_URL} />
-  
+<ProfileImage image={IMAGE_URL} />
+
 // ...
 ```
 
@@ -313,7 +300,7 @@ Import the `User` component to `Tweet.jsx`. After importing it, render the compo
 ```jsx
 // ...
 
- <User name={USER_NAME} handle={USER_HANDLE} />
+<User name={USER_NAME} handle={USER_HANDLE} />
 
 // ...
 ```
@@ -345,10 +332,9 @@ Import the `Timestamp` component to `Tweet.jsx`. After importing it, render the 
 ```jsx
 // ...
 
-  <Timestamp time={TWEET_TIMESTAMP} />
-  
-// ...
+<Timestamp time={TWEET_TIMESTAMP} />
 
+// ...
 ```
 
 <br>
@@ -378,8 +364,8 @@ When done, import the `Message` component and render it in the `Tweet.jsx` in th
 ```jsx
 // ...
 
-  <Message message={TWEET_MESSAGE} />
-  
+<Message message={TWEET_MESSAGE} />
+
 // ...
 ```
 
@@ -415,8 +401,8 @@ When done, import the `Actions` component and render it in the `Tweet.jsx` like 
 ```jsx
 // ...
 
-  <Actions />
-  
+<Actions />
+
 // ...
 ```
 
@@ -434,7 +420,6 @@ Once finished, your app should be displaying the following content:
 
 <details>
 
-
 <summary><b>See Expected Result</b></summary>
 
 <br>
@@ -445,7 +430,6 @@ Once finished, your app should be displaying the following content:
 <br>
 </details>
 
-
 Happy coding! :blue_heart:
 
 <br>
@@ -454,7 +438,6 @@ Happy coding! :blue_heart:
 
 <details>
   <summary>I am stuck and don't know how to solve the problem or where to start. What should I do?</summary>
-
 
   <br>
 
@@ -472,7 +455,6 @@ Once you have a clear understanding of the problem, you will be able to start wo
 
 <details>
   <summary>I got the error: "Cannot find module 'Node.js'". How can I resolve it?</summary>
-
 
   <br>
 
@@ -507,7 +489,6 @@ This will add the package to the list of dependencies in the `package.json` file
 <details>
   <summary>I got the message: "Something is already running at ... Would you like to run the app at another port instead? [Y/n]". What should I do?</summary>
 
-
   <br>
 
 This message means that another process is already using the specified port. This could be another instance of your React app, or it could be another application that is using that port.
@@ -524,7 +505,6 @@ Another approach is to manually terminate the process using the port in question
 
 <details>
   <summary>How do I display an <em>image</em> in a React component?</summary>
-
 
   <br>
 
@@ -553,7 +533,6 @@ In the above example, the `example` variable is assigned the value of the import
 <details>
   <summary>Where should images for a React project be stored?</summary>
 
-
   <br>
 
 The images for your React project should be stored inside the `src/` folder. To keep things organized you should create a separate `assets/` or `images/` directory inside of the `src/` folder.
@@ -567,10 +546,9 @@ The images for your React project should be stored inside the `src/` folder. To 
 <details>
   <summary>I got the warning in my React app:" 'variable' is assigned a value but never used: no-unused-vars". What should I do?</summary>
 
-
   <br>
 
-  This warning is a linting error thrown by a linting tool in your React project, and it is warning you that the variable is created, but that it is never being used in your code.
+This warning is a linting error thrown by a linting tool in your React project, and it is warning you that the variable is created, but that it is never being used in your code.
 
 To resolve this issue, you can either use the variable in your code, or you can simply remove the variable if you don't need it.
 
@@ -582,7 +560,6 @@ To resolve this issue, you can either use the variable in your code, or you can 
 
 <details>
   <summary>I am getting an error: "not defined". How do I fix it?</summary>
-
 
   <br>
 
@@ -600,7 +577,6 @@ In case the variable or a function is defined in another file, make sure that th
 
 <details>
   <summary>I am unable to push changes to the repository. What should I do?</summary>
-
 
   <br>
 
