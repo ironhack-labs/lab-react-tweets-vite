@@ -4,11 +4,10 @@ import Timestamp from "./Timestamp";
 import Message from "./Message";
 import Actions from "./Actions";
 
-function Tweet({tweet}) {
-  
+function Tweet({ tweet }) {
   return (
     <div className="tweet">
-      <ProfileImage image={tweet.user.image}/>
+      <ProfileImage image={tweet.user.image} />
       <div className="body">
         <div className="top">
           <User name={tweet.user.name} handle={tweet.user.handle} />
