@@ -40,8 +40,8 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      {tweetsArray.map(tweet => {
-        return <Tweet key={tweet.user.name} tweet={tweet}/>
+      {tweetsArray.map((tweet, i) => {
+        return <Tweet key={i} tweet={tweet}/>
       })}
       
     </div>
