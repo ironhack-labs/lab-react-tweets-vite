@@ -1,4 +1,5 @@
 import ProfileImage from "./ProfileImage";
+import User from "./User";
 
 function Tweet({ tweet }) {
 	return (
@@ -8,10 +9,8 @@ function Tweet({ tweet }) {
 
 			<div className='body'>
 				<div className='top'>
-					<span className='user'>
-						<span className='name'>{tweet.user.name}</span>
-						<span className='handle'>@{tweet.user.handle}</span>
-					</span>
+					
+          <User name={tweet.user.name} handle={tweet.user.handle} />
 
 					<span className='timestamp'>{tweet.timestamp}</span>
 				</div>
