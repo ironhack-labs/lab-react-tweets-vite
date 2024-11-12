@@ -1,18 +1,17 @@
-import ProfileImage from "./ProfileImage";
-import User from "./User";
+import ProfileImage from './ProfileImage';
+import Timestamp from './Timestamp';
+import User from './User';
 
 function Tweet({ tweet }) {
 	return (
 		<div className='tweet'>
-	
-      <ProfileImage image={tweet.user.image}/>
+			<ProfileImage image={tweet.user.image} />
 
 			<div className='body'>
 				<div className='top'>
-					
-          <User name={tweet.user.name} handle={tweet.user.handle} />
+					<User name={tweet.user.name} handle={tweet.user.handle} />
 
-					<span className='timestamp'>{tweet.timestamp}</span>
+					<Timestamp time={tweet.timestamp} />
 				</div>
 
 				<p className='message'> {tweet.message} </p>
