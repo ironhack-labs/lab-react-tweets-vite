@@ -1,4 +1,8 @@
-function Tweet() {
+function Tweet(props) {
+  console.log(props);
+   const tweet = props.tweet
+  console.log(tweet);
+  
   return (
     <div className="tweet">
       <img
