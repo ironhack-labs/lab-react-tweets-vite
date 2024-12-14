@@ -60,7 +60,8 @@ button:focus-visible {
 }
 
 .tweet {
-  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   min-width: 480px;
   max-width: 640px;
   min-height: 80px;
