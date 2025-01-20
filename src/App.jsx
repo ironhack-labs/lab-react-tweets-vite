@@ -40,17 +40,20 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      {/* Pasar el primer tweet como prop al componente Tweet */}
-      <Tweet
-        tweet={{
-          name: tweetsArray[0].user.name,
-          image: tweetsArray[0].user.image,
-          handle: `@${tweetsArray[0].user.handle}`,
-          timestamp: tweetsArray[0].timestamp,
-          message: tweetsArray[0].message,
-        }}
-      />
-    </div>
+  {tweetsArray.map((tweet, index) => (
+    <Tweet
+      key={index}
+      tweet={{
+        name: tweet.user.name,
+        image: tweet.user.image,
+        handle: `@${tweet.user.handle}`,
+        timestamp: tweet.timestamp,
+        message: tweet.message,
+      }}
+    />
+  ))}
+</div>
+
   );
 }
 

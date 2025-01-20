@@ -13,10 +13,9 @@ function Tweet({ tweet }) {
 
       <div className="body">
         <div className="top">
-          <span className="user">
-            <span className="name">{name}</span>
-            <span className="handle">{handle}</span>
-          </span>
+        <User name={name} handle={`@${handle}`} />
+
+
 
           <span className="timestamp">{timestamp}</span>
         </div>
