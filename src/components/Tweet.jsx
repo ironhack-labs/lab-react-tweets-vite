@@ -2,7 +2,7 @@ function Tweet() {
   return (
     <div className="tweet">
       <img
-        src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/ih_logo.jpeg"
+        src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/tweet-user-photo.png"
         className="profile"
         alt="profile"
       />
@@ -10,16 +10,17 @@ function Tweet() {
       <div className="body">
         <div className="top">
           <span className="user">
-            <span className="name">Ironhack</span>
-            <span className="handle">@ironhack</span>
+            <span className="name">Thoughts of Dog</span>
+            <span className="handle">dog_feelings</span>
           </span>
 
-          <span className="timestamp">Nov 30, 2020</span>
+          <span className="timestamp">1h ago</span>
         </div>
 
         <p className="message">
-          On December 7th, we will be hosting a #webinar that will introduce you
-          to #SQL! Are you ready? 🚀
+          the human likes to say. that i live here rent free. but i would argue.
+          this housing accommodation. is my payment. for a lifetime of love. and
+          excellent company
         </p>
 
         <div className="actions">
