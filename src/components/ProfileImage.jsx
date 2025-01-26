@@ -1,5 +1,7 @@
-Import React from 'React';
-Import TweetData from './components/TweetData';
+import React from "react";
 
+function ProfileImage({ image }) {
+  return <img src={image} className="profile" alt="profile" />;
+}
 
-<img src="IMAGE_URL" className="profile" alt="profile" />;
+export default ProfileImage;
