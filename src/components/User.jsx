@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function User({ user }) {
+export default function User({ name, handle }) {
   return (
     <span className="user">
-      <span className="name">{user.name}</span>
-      <span className="handle">{user.handle}</span>
+      <span className="name">{name}</span>
+      <span className="handle">@{handle}</span>
     </span>
   );
 }

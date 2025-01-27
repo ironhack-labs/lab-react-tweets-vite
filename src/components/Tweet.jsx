@@ -11,7 +11,7 @@ const Tweet = ({ tweet }) => {
 
       <div className="body">
         <div className="top">
-          <User user={tweet.user} />
+          <User name={tweet.user.name} handle={tweet.user.handle} />
           <Timestamp time={tweet.timestamp} />
         </div>
 
