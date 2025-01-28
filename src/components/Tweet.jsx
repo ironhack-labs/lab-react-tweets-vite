@@ -1,37 +1,42 @@
-function Tweet() {
+
+import ProfileImage from "./ProfileImage";
+import TimeStamp from "./Timestamp";
+import User from "./User";
+import Message from "./Message";
+import Actions from "./Actions";
+
+function Tweet({tweet}) {
   return (
     <div className="tweet">
-      <img
-        src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/ih_logo.jpeg"
+      {/* <img
+        src={tweet.user.image}
         className="profile"
         alt="profile"
-      />
-
-      <div className="body">
-        <div className="top">
-          <span className="user">
-            <span className="name">Ironhack</span>
-            <span className="handle">@ironhack</span>
-          </span>
-
-          <span className="timestamp">Nov 30, 2020</span>
+      /> */}
+      <div style={{
+        display: "flex",
+        alignItems: 'center'
+      }}>
+        <div>
+        <ProfileImage image={tweet.user.image} />
         </div>
-
-        <p className="message">
-          On December 7th, we will be hosting a #webinar that will introduce you
-          to #SQL! Are you ready? 🚀
-        </p>
-
-        <div className="actions">
-          {/* Font Awesome icons */}
-          <i className="far fa-comment" data-testid="comment-icon"></i>
-          <i className="fas fa-retweet" data-testid="retweet-icon"></i>
-          <i className="far fa-heart" data-testid="heart-icon"></i>
-          <i className="fas fa-share" data-testid="share-icon"></i>
-        </div>
+      <div>
+          {/* <span className="user">
+            <span className="name">{tweet.user.name}</span>
+            <span className="handle">@{tweet.user.handle}</span>
+          </span> */}
+          <User name={tweet.user.name} handle={tweet.user.handle} />
+          {/* <span className="timestamp">{tweet.timestamp}Nov 30, 2020</span>
+        </div> */}
+          <TimeStamp timestamp={tweet.user.timestamp} />
+      </div>
       </div>
 
-      <i className="fas fa-ellipsis-h"></i>
+      <div>
+          {/* <p className="message"> {tweet.message}</p> */}
+          <Message message={tweet.message}/>
+      </div>
+          <Actions actions={tweet.actions}/>
     </div>
   );
 }
