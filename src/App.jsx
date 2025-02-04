@@ -39,10 +39,23 @@ const tweetsArray = [
 
 function App() {
   return (
+
+      /* <div className="App">
+      <Tweet image={"https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/ih_logo.jpeg"} name = "Ironhack" handle = "@ironhack" timestamp = "Nov 30, 2020" message = "On December 7th, we will be hosting a #webinar that will introduce you to #SQL! Are you ready? 🚀"/>
+      <Tweet image={tweetsArray[0].user.image} name={tweetsArray[0].user.name} handle={tweetsArray[0].user.handle} timestamp={tweetsArray[0].timestamp} message={tweetsArray[0].message} />
+      <Tweet image={tweetsArray[1].user.image} name={tweetsArray[1].user.name} handle={tweetsArray[1].user.handle} timestamp={tweetsArray[1].timestamp} message={tweetsArray[1].message} />
+      <Tweet image={tweetsArray[2].user.image} name={tweetsArray[2].user.name} handle={tweetsArray[2].user.handle} timestamp={tweetsArray[2].timestamp} message={tweetsArray[2].message} />
+
+      </div> */
+
     <div className="App">
-      <Tweet />
+      {tweetsArray.map((tweet, index) => (
+        <Tweet key={index} tweet={tweet} />
+      ))}
+      
     </div>
   );
 }
+
 
 export default App;
