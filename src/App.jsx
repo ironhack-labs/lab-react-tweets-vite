@@ -1,5 +1,6 @@
 import "./App.css";
 import Tweet from "./components/Tweet";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const tweetsArray = [
   {
@@ -40,7 +41,10 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      {/* <Tweet tweet={ tweetsArray[0] } /> */}
+      {tweetsArray.map((tweet) => (
+        <Tweet key={tweet.timestamp} tweet={tweet} />
+      ))}
     </div>
   );
 }
