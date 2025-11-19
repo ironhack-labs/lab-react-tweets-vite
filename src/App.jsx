@@ -33,14 +33,16 @@ const tweetsArray = [
     },
     timestamp: "3h ago",
     message:
-      "here is what. i plan to accomplish today: \n\n2. bark loudly. but at nothing \n7. lose my ball under the couch\n7b. politely ask the human. to get my ball\n3. immediately lose it again. under the same couch\n4. big nap. you have worked hard\n2. repeat",
+      "here is what. i plan to accomplish today:\n2. bark loudly\n7. lose my ball\n7b. ask human for help\n3. lose it again\n4. nap\n2. repeat",
   },
 ];
 
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      {tweetsArray.map((tweet, index) => (
+        <Tweet key={index} tweet={tweet} />
+      ))}
     </div>
   );
 }
