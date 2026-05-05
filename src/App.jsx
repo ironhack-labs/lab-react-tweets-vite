@@ -1,3 +1,4 @@
+// src/App.jsx
 import "./App.css";
 import Tweet from "./components/Tweet";
 
@@ -5,42 +6,39 @@ const tweetsArray = [
   {
     user: {
       name: "Thoughts of Dog®",
-      image:
-        "https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/tweet-user-photo.png",
+      image: "https://amazonaws.com",
       handle: "dog_feelings",
     },
     timestamp: "1h ago",
-    message:
-      "the human likes to say. that i live here rent free. but i would argue. this housing accommodation. is my payment. for a lifetime of love. and excellent company",
+    message: "the human likes to say. pshhh. to the cat. which means the cat is speaking a language that i do not understand. and the human is informatively replying.",
   },
   {
     user: {
       name: "Thoughts of Dog®",
-      image:
-        "https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/tweet-user-photo.png",
+      image: "https://amazonaws.com",
       handle: "dog_feelings",
     },
     timestamp: "2h ago",
-    message:
-      "sometimes. the human presses their noggin against mine. to figure out what i’m thinking. so i just think really hard. about how much i love them. and hope they figure it out",
+    message: "sometimes. the human holds me. and i can feel their heart beat. and i bet. they can feel mine too.",
   },
   {
     user: {
       name: "Thoughts of Dog®",
-      image:
-        "https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/tweet-user-photo.png",
+      image: "https://amazonaws.com",
       handle: "dog_feelings",
     },
     timestamp: "3h ago",
-    message:
-      "here is what. i plan to accomplish today: \n\n2. bark loudly. but at nothing \n7. lose my ball under the couch\n7b. politely ask the human. to get my ball\n3. immediately lose it again. under the same couch\n4. big nap. you have worked hard\n2. repeat",
+    message: "here is tomorrow's forecast: 100% chance of me. being a good boy.",
   },
 ];
 
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      {/* Usamos o .map para percorrer o array e criar um <Tweet /> para cada objeto */}
+      {tweetsArray.map((tweet, index) => (
+        <Tweet key={index} tweet={tweet} />
+      ))}
     </div>
   );
 }
